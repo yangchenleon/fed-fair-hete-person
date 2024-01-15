@@ -1,0 +1,34 @@
+\usepackage{ctex} % 中文支持
+\usepackage{graphicx} % 插入图片
+\usepackage{amsmath, amssymb} % 数学符号/公式
+\usepackage{hyperref} % 超链接，用在参考文献
+\usepackage{acro} % 管理缩写词表
+\usepackage{fontspec} % 字体 use xelatex
+\usepackage{color} % 颜色
+\usepackage[left=2.50cm,right=2.50cm,top=2.80cm,bottom=2.50cm]{geometry}% 页边距设置A4
+
+\renewcommand{\baselinestretch}{1.5} % 定义行间距（1.5）
+\newcommand{\myref}[1]{Eq.\ref{#1}} % 引用公式带有Eq
+
+\graphicspath{{figures/}}
+\makeatletter
+\def\input@path{{contents/}}
+\makeatother
+
+\bibliographystyle{unsrt} % plain 按照作者顺序 unsrt按照引用顺序
+
+\DeclareAcronym{iot}{short=IoT, long=Internet of Things}
+\DeclareAcronym{ec}{short=EC, long=Edge Computing}
+\DeclareAcronym{mec}{short=MEC, long=Mobile Edge Computing}
+\DeclareAcronym{iid}{short=I.I.D., long=Independent and Identically Distributed}
+\DeclareAcronym{niid}{short=Non-I.I.D., long=Non Independent and Identically Distributed}
+\DeclareAcronym{fl}{short=FL, long=Federated Learning}
+\DeclareAcronym{pfl}{short=PFL, long=Personalized Federated Learning}
+\DeclareAcronym{hfl}{short=HFL, long=Heterogenous Federated Learning}
+\DeclareAcronym{kd}{short=KD, long=Knowledge Distillation}
+\DeclareAcronym{kl}{short=KL, long=Kullback–Leibler}
+\DeclareAcronym{ue}{short=UE, long=User Equipment}
+
+\title{A more fair and efficient Heterogenous / Personalized Federated Learning framework}
+\author{YCC}
+\date{\today}
